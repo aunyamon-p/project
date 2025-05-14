@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <title>Aunyamon.P</title>
+</head>
+<style>
+  html {
+    scroll-behavior: smooth;
+}
+
+.font-prompt {
+      font-family: 'Prompt';
+    }
+</style>
+<body class="bg-[#0F172A] text-white">
+<!--Navbar-->
+<nav class="fixed top-0 w-full bg-[#1E293B] z-50 shadow-md">
+  <div class="flex justify-between items-center px-10 py-4">
+    <h1 class="text-xl font-bold">Aunyamon.P</h1>
+
+    <!--Mobile only-->
+    <button id="menu-button" class="md:hidden text-white focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+
+    <!--Desktop Menu-->
+    <ul class="hidden md:flex space-x-6 text-sm font-medium">
+      <li><a href="#about" class="hover:text-cyan-400">About</a></li>
+      <li><a href="#msn" class="hover:text-cyan-400">MSNOwner</a></li>
+      <li><a href="#meow" class="hover:text-cyan-400">MeowCo.</a></li>
+      <li><a href="#shroom" class="hover:text-cyan-400">ShroomShop</a></li>
+      <li><a href="#company" class="hover:text-cyan-400">CompanyWeb</a></li>
+    </ul>
+  </div>
+
+  <!--Mobile menu dropdown-->
+  <ul id="mobile-menu" class="absolute top-full right-0 w-auto md:hidden hidden flex-col space-y-2 px-6 py-4 text-sm font-medium bg-[#1E293B] shadow-md z-40">
+    <li><a href="#about" class="block hover:text-cyan-400 mobile-link">About</a></li>
+    <li><a href="#msn" class="block hover:text-cyan-400 mobile-link">MSNOwner</a></li>
+    <li><a href="#meow" class="block hover:text-cyan-400 mobile-link">MeowCo.</a></li>
+    <li><a href="#shroom" class="block hover:text-cyan-400 mobile-link">ShroomShop</a></li>
+    <li><a href="#company" class="block hover:text-cyan-400 mobile-link">CompanyWeb</a></li>
+  </ul>
+</nav>
+
+  <!--About-->
+  <section id="about" class="min-h-screen flex items-center justify-center pt-6 px-10 bg-[#0F172A] text-center">
+    <div>
+      <h1 class="text-6xl md:text-8xl font-bold mb-6 text-cyan-300">About Project</h1>
+      <p class="text-lg md:text-xl text-gray-300">
+        Hi, I'm Aunyamon Plunsungket.<br />
+        Here you’ll find some of the projects I’ve done.
+      </p>
+      <button class="mt-8 px-6 py-3 border border-white text-white font-bold rounded-lg hover:bg-cyan-500 transition duration-300">
+        <a href="https://github.com/aunyamon-p">Github link</a>
+    </div>
+  </section>
+
+  <!--MSN Owner-->
+  <section id="msn" class="bg-[#1E293B] py-20 px-10">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-2xl text-cyan-200">Project 01</h2>
+        <h1 class="text-5xl font-bold text-white">MSN Owner</h1>
+      </div>
+      <div class="flex flex-col md:flex-row gap-10 items-center">
+        <div class="w-full md:w-1/2">
+          <div class="swiper msnSwiper rounded-xl overflow-hidden shadow-lg">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="/img/msn/msn-1.png" class="w-full" /></div>
+              <div class="swiper-slide"><img src="/img/msn/msn-2.png" class="w-full" /></div>
+              <div class="swiper-slide"><img src="/img/msn/msn-3.png" class="w-full" /></div>
+              <div class="swiper-slide"><img src="/img/msn/msn-4.png" class="w-full" /></div>
+              <div class="swiper-slide"><img src="/img/msn/msn-5.png" class="w-full" /></div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 text-gray-300">
+          <h3 class="text-2xl font-semibold mb-4 text-cyan-400">Description</h3>
+          <p class="font-prompt">เว็บแอปพลิเคชันจัดการระบบหอพักสำหรับเจ้าของหอพัก มีฟังก์ชันหลัก ได้แก่ 
+            เข้าสู่ระบบและลงทะเบียน ระบุรายละเอียดหอพัก หน้าเมนูหลัก ตั้งค่าหอพัก หน้าข้อมูลผู้เช่า จัดการพัสดุ 
+            เช็คยอดค้างชำระ และบันทึกแจ้งเรื่อง
+          </p><br>
+          <p class="font-semibold">Programming languages : Python(Tkinter GUI)</p>
+          <p class="font-semibold"> Source code : <a href="https://github.com/aunyamon-p/MSN_Owner" class="text-cyan-400 hover:underline mobile-link">
+            https://github.com/aunyamon-p/MSN_Owner</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Meow Company-->
+  <section id="meow" class="bg-[#0F172A] py-20 px-10">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-2xl text-cyan-200">Project 02</h2>
+        <h1 class="text-5xl font-bold text-white">Meow Company</h1>
+      </div>
+      <div class="flex flex-col md:flex-row gap-10 items-center">
+        <div class="w-full md:w-1/2">
+          <div class="swiper meowSwiper rounded-xl overflow-hidden shadow-lg">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="/img/meow/meow-1.png" class="w-full" /></div>
+              <div class="swiper-slide"><img src="/img/meow/meow-2.png" class="w-full" /></div>
+              <div class="swiper-slide"><img src="/img/meow/meow-3.png" class="w-full" /></div>
+              <div class="swiper-slide"><img src="/img/meow/meow-4.png" class="w-full" /></div>
+              <div class="swiper-slide"><img src="/img/meow/meow-5.png" class="w-full" /></div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 text-gray-300">
+          <h3 class="text-2xl font-semibold mb-4 text-cyan-400">Description</h3>
+          <p class="font-prompt">เว็บไซต์ที่ออกแบบตาม User Story ที่อาจารย์กำหนดให้ เป็นระบบเฉพาะไว้สำหรับใช้งานในองค์กร เพื่อให้คนในองค์กรมีความสะดวกรวดเร็วในการจัดการอีเมล
+            ทั้งการอ่าน และตอบกลับอีเมล ฟังก์ชันที่มีได้แก่ สมัครสมาชิก เข้าสู่ระบบ เขียนอีเมล ส่งอีเมล ดูอีเมล ลบอีเมล อัปเดตสถานะอีเมล</p><br>
+          <p class="font-semibold">Programming languages : C# HTML CSS </p>
+          <p class="font-semibold"> Source code : <a href="https://github.com/aunyamon-p/MeowCompany" class="text-cyan-400 hover:underline mobile-link">
+            https://github.com/aunyamon-p/MeowCompany</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Shroom Shop-->
+  <section id="shroom" class="bg-[#1E293B] py-20 px-10">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-2xl text-cyan-200">Project 03</h2>
+        <h1 class="text-5xl font-bold text-white">Shroom Shop</h1>
+      </div>
+      <div class="flex flex-col md:flex-row gap-10 items-center">
+        <div class="w-full md:w-1/2 rounded-xl overflow-hidden shadow-lg">
+          <video src="/img/shroom/ShroomShop.mp4" autoplay loop muted class="w-full"></video>
+        </div>
+        <div class="w-full md:w-1/2 text-gray-300">
+          <h3 class="text-2xl font-semibold mb-4 text-cyan-400">Description</h3>
+          <p class="font-prompt">เว็บไซต์ขายไอเท็มจากในเกม โดยไอเท็มที่ขายคือ “เห็ด” ซึ่งได้จากเกมใน Roblox ที่ชื่อว่า 
+            “Creatures of Sonaria” มีฟังก์ชันหลัก ได้แก่ เข้าสู่ระบบ/สมัครสมาชิก 
+            เพิ่ม/ลบรายการสินค้า ตระกร้าสินค้า เติมเงิน ชำระเงิน และประวัติการซื้อขาย</p><br>
+          <p class="font-semibold">Programming languages : HTML CSS Javascript</p>
+          <p class="font-semibold">Libraries/Framework : React.js Node.js Vscode</p>
+          <p class="font-semibold">Source code : <br>
+            <a href="https://github.com/aunyamon-p/shroomShop"class="text-cyan-400 hover:underline mobile-link">https://github.com/aunyamon-p/shroomShop</a>
+            <a href="https://github.com/aunyamon-p/shroomShop_json" class="text-cyan-400 hover:underline mobile-link">https://github.com/aunyamon-p/shroomShop_json</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Company Website-->
+  <section id="company" class="bg-[#0F172A] py-20 px-10">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-2xl text-cyan-200">Project 04</h2>
+        <h1 class="text-5xl font-bold text-white">Company Website</h1>
+      </div>
+      <div class="flex flex-col md:flex-row gap-20 items-center">
+        <div class="w-full md:w-1/2 rounded-xl overflow-hidden shadow-lg">
+          <video src="/img/company/co-1.mp4" autoplay loop muted class="w-full"></video>
+        </div>
+        <div class="w-full md:w-1/2 text-gray-300">
+          <h3 class="text-2xl font-semibold mb-4 text-cyan-400">Description</h3>
+          <p class="font-prompt">เว็บไซต์แสดงข้อมูลทั่วไปของบริษัท</p><br>
+          <p class="font-semibold">Programming languages : HTML CSS Javascript</p>
+          <p class="font-semibold">Libraries/Framework : Tailwind Vscode</p>
+          <p class="font-semibold">Source code : <a href="https://github.com/aunyamon-p/CompanyWeb"class="text-cyan-400 hover:underline mobile-link">https://github.com/aunyamon-p/CompanyWeb</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    //Swiper for MSN Owner
+    new Swiper(".msnSwiper", {
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      autoplay: {
+        delay: 3000,
+      },
+    });
+
+    //Swiper for Meow Company
+    new Swiper(".meowSwiper", {
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      autoplay: {
+        delay: 3000,
+      },
+    });
+  </script>
+
+  <script>
+  const menuButton = document.getElementById('menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const mobileLinks = document.querySelectorAll('.mobile-link');
+
+  menuButton.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+
+  //Close menu on link click
+  mobileLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+    });
+  });
+  </script>
+</body>
+</html>
